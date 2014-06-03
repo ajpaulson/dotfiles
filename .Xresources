@@ -39,3 +39,10 @@ xterm*toolBar:          false
 ! White
 *color7:                #ffffff
 *color15:               #c9f0fa
+
+URxvt*scrollBar:	false
+URxvt*font:	xft:monofur for Powerline:pixelsize=10.5
+*background:	#212121
+*foreground:	#E5E5E5
+Xft.hinting:	true
+URxvt*borderless:	true
