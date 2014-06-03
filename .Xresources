@@ -1,0 +1,41 @@
+XTerm*termName:         xterm-256color
+xterm*faceName:         xft:monofur:pixelsize=14:antialias=true
+xterm*dynamicColors:    true
+xterm*utf8:             2
+xterm*scrollBar:        false
+xterm*rightScrollBar:   false
+xterm*toolBar:          false
+*background:            #212121
+*foreground:            #e5e5e5
+
+! Black
+*color0:                #1e2d2d
+*color8:                #2e4545
+
+! Red
+*color1:                #ff4040
+*color9:                #ff0101
+
+! Green
+*color2:                #008b00
+*color10:               #bada55
+
+! Yellow
+*color3:                #ffa40b
+*color11:               #ffff4d
+
+! Blue
+*color4:                #60bdf4
+*color12:               #00bcbc
+
+! Magenta
+*color5:                #ff0087
+*color13:               #f64a8a
+
+! Cyan
+*color6:                #80a0ff
+*color14:               #007878
+
+! White
+*color7:                #ffffff
+*color15:               #c9f0fa
