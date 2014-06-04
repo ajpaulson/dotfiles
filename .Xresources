@@ -41,7 +41,7 @@ xterm*toolBar:          false
 *color15:               #c9f0fa
 
 URxvt*scrollBar:	false
-URxvt*font:	xft:monofur for Powerline:pixelsize=10.5
+URxvt*font:	xft:monofur for Powerline:pixelsize=14.5
 /* *background:	#212121 */
 /* *foreground:	#E5E5E5 */
 Xft.hinting:	true
