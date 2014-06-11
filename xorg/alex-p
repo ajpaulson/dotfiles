@@ -47,7 +47,7 @@ xkb_symbols "alex-p" {
     key <AB04> { [     v,          V,     copyright,             cent ] };
     key <AB05> { [     b,          B,             b,                B ] };
     key <AB06> { [     n,          N,            oe,               OE ] };
-    key <AB07> { [     M,          M,        oslash,         Ooblique ] };
+    key <AB07> { [     m,          M,        oslash,         Ooblique ] };
     // End alphanumeric section
 
     key <CAPS> { [ Control, Escape,     BackSpace,        BackSpace ] };
