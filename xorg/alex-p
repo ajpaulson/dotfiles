@@ -5,7 +5,7 @@ xkb_symbols "alex-p" {
 
     name[Group1]= "English (Alex-P)";
 
-    include "us(intl)"
+    include "us(basic)"
 
     // Alphanumeric section
     key <AE01> {  [        exclam,  1   ] };
