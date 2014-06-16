@@ -41,7 +41,7 @@ xterm*toolBar:          false
 *color15:               #c9f0fa
 
 URxvt*scrollBar:	false
-URxvt*font:	xft:monofur for Powerline:pixelsize=14.5:antialias=true:hinting=true,xft:Symbola:pixelsize=14:antialias=true:hinting=true,xft:FreeSerif:style=Regular
+URxvt*font:	xft:monofur for Powerline:pixelsize=14.5:antialias=true:hinting=true,xft:DejaVu Sans Mono:style=Regular,xft:Unifont
 /* *background:	#212121 */
 /* *foreground:	#E5E5E5 */
 Xft.hinting:	true
