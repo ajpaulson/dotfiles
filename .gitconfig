@@ -1,0 +1,22 @@
+[user]
+	name = Alex Paulson
+	email = whileforkdofork@gmail.com
+[color]
+	ui = auto
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[core]
+	editor = vim
+[mergetool "vimdiff"]
+	cmd = vim +Gdiff $MERGED
+[url "git@github.com:"]
+	insteadOf = git://github.com/
+
+[alias]
+# From http://www.codedevelopr.com/
+	zip = "!zipArchive() { git archive --format zip --output $1 $2; }; zipArchive"
+	tgz = "!zipArchive() { git archive --format tgz --output $1 $2; }; zipArchive"
