@@ -47,8 +47,8 @@ URxvt*font:	xft:monofur for Powerline:pixelsize=14.5:antialias=true:hinting=true
 Xft.hinting:	true
 URxvt*borderless:	true
 
-# Usage: put the following lines in your .Xdefaults/.Xresources:
-# copy the clipboard file to /usr/lib/urxvt/perl
+! Usage: put the following lines in your .Xdefaults/.Xresources:
+! copy the clipboard file to /usr/lib/urxvt/perl
 URxvt.perl-ext-common: ...,clipboard
 URxvt.keysym.M-c:   perl:clipboard:copy
 URxvt.keysym.M-v:   perl:clipboard:paste
