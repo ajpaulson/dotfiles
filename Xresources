@@ -1,5 +1,5 @@
 XTerm*termName:         xterm-256color
-xterm*faceName:         xft:monofur:pixelsize=14:antialias=true
+xterm*faceName:         xft:monofur for Powerline:pixelsize=14:antialias=true
 xterm*dynamicColors:    true
 xterm*utf8:             2
 xterm*scrollBar:        false
@@ -41,7 +41,7 @@ xterm*toolBar:          false
 *color15:               #c9f0fa
 
 URxvt*scrollBar:	false
-URxvt*font:	xft:monofur for Powerline:pixelsize=14.5:antialias=true:hinting=true,xft:DejaVu Sans Mono:style=Regular,xft:Unifont
+URxvt*font:	xft:monofur for Powerline:pixelsize=14.5:antialias=true:hinting=true,xft:DejaVu Sans Mono:style=Book,xft:Unifont
 /* *background:	#212121 */
 /* *foreground:	#E5E5E5 */
 Xft.hinting:	true
