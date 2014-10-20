@@ -1,22 +1,31 @@
 [user]
 	name = Alex Paulson
 	email = whileforkdofork@gmail.com
+[push]
+	default = simple
 [color]
-	ui = auto
+	ui = always
+	status = always
+	branch = always
 [diff]
-	tool = vimdiff
+	tool = vimdiff3
 [merge]
-	tool = vimdiff
+	tool = fugitive
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [mergetool]
 	prompt = false
 [core]
 	editor = vim
-[mergetool "vimdiff"]
-	cmd = vim +Gdiff $MERGED
+; [mergetool "vimdiff3"]
+; 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [url "git@github.com:"]
 	insteadOf = git://github.com/
+[url "https://"]
+	insteadOf = git://
 
 [alias]
 # From http://www.codedevelopr.com/
 	zip = "!zipArchive() { git archive --format zip --output $1 $2; }; zipArchive"
 	tgz = "!zipArchive() { git archive --format tgz --output $1 $2; }; zipArchive"
+	bra = branch -vva
