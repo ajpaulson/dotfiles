@@ -7,6 +7,7 @@
 	ui = always
 	status = always
 	branch = always
+	diff = always
 [diff]
 	tool = vimdiff3
 [merge]
