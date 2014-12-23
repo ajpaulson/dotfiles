@@ -34,3 +34,5 @@
 	la = log --pretty=format:'%C(yellow)%h%Creset %C(bold green)%an%Creset %Cblue%ad%Creset %s' --date=short
 [help]
 	autocorrect = 1
+[status]
+	showUntrackedFiles = all
