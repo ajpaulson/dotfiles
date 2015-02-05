@@ -49,5 +49,5 @@ URxvt*borderless:	true
 
 ! Usage: put the following lines in your .Xdefaults/.Xresources:
 ! copy the clipboard file to /usr/lib/urxvt/perl
-URxvt.perl-ext-common: ...,clipboard
+URxvt.perl-ext-common: ,clipboard
 URxvt*altSendsEscape: true
