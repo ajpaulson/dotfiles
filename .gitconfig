@@ -32,6 +32,7 @@
 	tgz = "!zipArchive() { git archive --format tgz --output $1 $2; }; zipArchive"
 	bra = branch -vva
 	la = log --pretty=format:'%C(yellow)%h%Creset %C(bold green)%an%Creset %Cblue%ad%Creset %s' --date=short
+	lan = log --pretty=format:'%C(yellow)%h%Creset %C(bold green)%an%Creset %Cblue%ad%Creset %s' --date=short ORIG_HEAD..HEAD
 	new = log --oneline --no-decorate --name-status --no-merges ORIG_HEAD..HEAD
 [help]
 	autocorrect = 1
