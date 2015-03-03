@@ -41,3 +41,5 @@
 	showUntrackedFiles = all
 [pull]
 	rebase = true
+[github]
+	user = ajpaulson
