@@ -21,10 +21,6 @@
 	whitespace = cr-at-eol
 ; [mergetool "vimdiff3"]
 ; 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-[url "git@github.com:"]
-	insteadOf = git://github.com/
-[url "https://"]
-	insteadOf = git://
 
 [alias]
 # From http://www.codedevelopr.com/
