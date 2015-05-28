@@ -4,10 +4,10 @@
 [push]
 	default = simple
 [color]
-	ui = always
-	status = always
-	branch = always
-	diff = always
+	ui = auto
+	status = auto
+	branch = auto
+	diff = auto
 [diff]
 	tool = vimdiff3
 [merge]
