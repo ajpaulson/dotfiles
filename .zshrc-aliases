@@ -3,7 +3,7 @@ alias v='vim'
 alias n='nvim'
 alias ccu='clang -lncurses'
 alias c11='clang++ -std=c++11 -Wno-tautological-compare'
-alias xssh='TERM=xterm-color ssh'
+alias xssh='TERM=xterm ssh'
 alias lisp='/usr/bin/gcl'
 alias lsd="ls --color=always -lF | grep --color=never '^d'"
 alias lsda="ls --color=always -lFA | grep --color=never '^d'"
