@@ -22,15 +22,19 @@ alias day='date +"%a %x"'
 alias header='curl -I'
 alias headerc='curl -I --compress'
 # Safety nets
-alias rm='rm -I --preserve-root'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ln='cp -i'
-alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
+alias rm='rm -Iv --preserve-root'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias ln='cp -iv'
+alias chown='chown -v --preserve-root'
+alias chmod='chmod -v --preserve-root'
+alias chgrp='chgrp -v --preserve-root'
 
 # Alt-s inserts sudo at the start of the line
 insert_sudo () { zle beginning-of-line; zle -U "sudo " }
 zle -N insert-sudo insert_sudo
 bindkey "^[s" insert-sudo
+
+# Open $file in $EDITOR if $file has certain suffix
+_editor_fts=(cpp cxx cc c hh h inl asc txt TXT tex md)
+for ft in $_editor_fts ; do alias -s $ft=$EDITOR ; done
