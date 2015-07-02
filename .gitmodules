@@ -1,0 +1,3 @@
+[submodule "antigen"]
+	path = antigen
+	url = GH:zsh-users/antigen
