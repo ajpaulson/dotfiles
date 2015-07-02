@@ -1,9 +1,31 @@
 alias ack='ack-grep'
 alias v='vim'
 alias n='nvim'
+# link ncurses
 alias ccu='clang -lncurses'
+# force c++11 standard and take no guff
 alias c11='clang++ -std=c++11 -Wno-tautological-compare'
+# because a lot of servers don't have terminfo for urxvt-256
 alias xssh='TERM=xterm ssh'
 alias lisp='/usr/bin/gcl'
+# List only the directories
 alias lsd="ls --color=always -lF | grep --color=never '^d'"
 alias lsda="ls --color=always -lFA | grep --color=never '^d'"
+# Fast ping
+alias p='ping -c 100 -i.2'
+# show $PATH as a list (Human readable)
+alias path='echo -e ${PATH//:/\\n}'
+# simple dates
+alias now='date +"%T"'
+alias day='date +"%a %x"'
+# Get web server headers and see if gzip/mod_deflate is supported
+alias header='curl -I'
+alias headerc='curl -I --compress'
+# Safety nets
+alias rm='rm -I --preserve-root'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='cp -i'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
