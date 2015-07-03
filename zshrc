@@ -16,8 +16,7 @@ antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle marzocchi/zsh-notify
 
 # Theme
-antigen theme clean
-#antigen theme kolo
+antigen theme ajpaulson/dotfiles alex
 
 antigen apply
 
