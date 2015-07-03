@@ -12,9 +12,12 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle command-not-found
 antigen bundle extract
 antigen bundle mafredri/zsh-async
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle marzocchi/zsh-notify
 
 # Theme
 antigen theme clean
+#antigen theme kolo
 
 antigen apply
 
