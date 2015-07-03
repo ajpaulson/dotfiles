@@ -19,6 +19,7 @@
 [core]
 	editor = vim
 	whitespace = cr-at-eol
+	excludesfile = ~/.gitignore_global
 ; [mergetool "vimdiff3"]
 ; 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 
