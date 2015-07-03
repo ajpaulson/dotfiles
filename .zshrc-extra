@@ -22,7 +22,7 @@ alias day='date +"%a %x"'
 alias header='curl -I'
 alias headerc='curl -I --compress'
 # Safety nets
-alias rm='rm -Iv --preserve-root'
+alias rm='rm -I --preserve-root'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias ln='cp -iv'
