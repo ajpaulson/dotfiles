@@ -20,6 +20,8 @@ antigen theme /home/apa/src/dotfiles --loc=alex --no-local-clone
 
 antigen apply
 
+# Set the editor
+export EDITOR=nvim
 # Pro cd function
 # (sudo gem install pro)
 pd() {
