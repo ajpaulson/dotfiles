@@ -1,10 +1,12 @@
 xterm*termName:         xterm-256color
-xterm*faceName:         xft:Fantasque Sans Mono:pixelsize=15:antialias=true:hinting=true
+xterm*faceName:         DejaVu Sans Mono:antialias=true:hinting=true
+xterm*faceSize:         11
 xterm*dynamicColors:    true
 xterm*locale:           true
 xterm*scrollBar:        false
 xterm*rightScrollBar:   false
 xterm*toolBar:          false
+xterm*metaSendsEscape:  true
 *background:            #212121
 *foreground:            #e5e5e5
 
