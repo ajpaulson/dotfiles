@@ -1,7 +1,7 @@
-XTerm*termName:         xterm-256color
-xterm*faceName:         xft:monofur for Powerline:pixelsize=14:antialias=true
+xterm*termName:         xterm-256color
+xterm*faceName:         xft:Fantasque Sans Mono:pixelsize=15:antialias=true:hinting=true
 xterm*dynamicColors:    true
-xterm*utf8:             2
+xterm*locale:           true
 xterm*scrollBar:        false
 xterm*rightScrollBar:   false
 xterm*toolBar:          false
