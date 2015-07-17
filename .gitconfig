@@ -17,7 +17,7 @@
 [mergetool]
 	prompt = false
 [core]
-	editor = vim
+	editor = nvim
 	whitespace = cr-at-eol
 	excludesfile = ~/.gitignore_global
 ; [mergetool "vimdiff3"]
