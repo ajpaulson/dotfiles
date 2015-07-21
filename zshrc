@@ -11,6 +11,7 @@ antigen bundle history-substring-search
 antigen bundle zsh-users/zsh-completions src
 antigen bundle command-not-found
 antigen bundle extract
+antigen bundle safe-paste
 antigen bundle mafredri/zsh-async
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle marzocchi/zsh-notify
