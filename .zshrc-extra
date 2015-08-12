@@ -1,3 +1,7 @@
+# Better mv
+autoload -U zmv
+
+# Aliases
 alias ack='ack-grep'
 alias v='vim'
 alias n='nvim'
