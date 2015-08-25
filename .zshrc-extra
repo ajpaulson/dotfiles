@@ -5,6 +5,7 @@ autoload -U zmv
 alias ack='ack-grep'
 alias v='vim'
 alias n='nvim'
+alias sudo='sudo -E'
 # link ncurses
 alias ccu='clang -lncurses'
 # force c++11 standard and take no guff
