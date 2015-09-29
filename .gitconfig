@@ -40,3 +40,5 @@
 	rebase = true
 [github]
 	user = ajpaulson
+[rebase]
+	autostash = true
