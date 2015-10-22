@@ -32,6 +32,7 @@
 	lan = log --pretty=format:'%C(yellow)%h%Creset %C(bold green)%an%Creset %Cblue%ad%Creset %s' --date=short ORIG_HEAD..HEAD
 	new = log --oneline --no-decorate --name-status --no-merges ORIG_HEAD..HEAD
 	sync = !git pull && git push
+	ls = ls-files
 [help]
 	autocorrect = 1
 [status]
