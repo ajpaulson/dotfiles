@@ -46,3 +46,8 @@ for ft in $_editor_fts ; do alias -s $ft=$EDITOR ; done
 
 # If I want a julia repl - use docker
 alias julia='docker run --rm -it -u $(id -u):$(id -g) -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data julia'
+
+# Simple ZSH builtin calculator
+calc() { echo $(( $* )) }
+# don't glob that!
+alias calc='noglob calc'
