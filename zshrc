@@ -24,6 +24,9 @@ antigen apply
 
 # Set the editor
 export EDITOR=nvim
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 # Pro cd function
 # (sudo gem install pro)
 pd() {
