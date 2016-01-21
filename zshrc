@@ -1,5 +1,5 @@
 source ~/src/dotfiles/antigen/antigen.zsh
-source ~/src/dotfiles/.zshrc-extra
+source ~/src/dotfiles/zshextra
 cdpath=(. ~ ~/src)
 # Load the oh-my-zsh library
 antigen use oh-my-zsh
