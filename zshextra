@@ -16,6 +16,9 @@ alias lisp='/usr/bin/gcl'
 # List only the directories
 alias lsd="ls --color=always -lF | grep --color=never '^d'"
 alias lsda="ls --color=always -lFA | grep --color=never '^d'"
+# List only the files
+alias lsf="ls --color=always -lF | grep --color=never '^-'"
+alias lsfa="ls --color=always -lFA | grep --color=never '^-'"
 # Fast ping
 alias p='ping -c 100 -i.2'
 # show $PATH as a list (Human readable)
