@@ -18,7 +18,7 @@ antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle marzocchi/zsh-notify
 
 # Theme
-antigen theme /home/apa/src/dotfiles --loc=alex --no-local-clone
+antigen theme ~/src/dotfiles --loc=alex --no-local-clone
 
 antigen apply
 
