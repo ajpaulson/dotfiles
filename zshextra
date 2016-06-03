@@ -55,6 +55,10 @@ for ft in $_editor_fts ; do alias -s $ft=$EDITOR ; done
 alias julia='docker run --rm -it -u $(id -u):$(id -g) -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data julia'
 # Wren REPL
 alias wren='docker run --rm -it -u $(id -u):$(id -g) -v "$PWD":/tmp -w /tmp ajpaulson/wren'
+# python2 Clean env
+alias p2='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:2-alpine'
+# python3 Clean env
+alias p3='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:alpine'
 
 # Simple ZSH builtin calculator
 calc() { echo $(( $* )) }
