@@ -59,6 +59,8 @@ alias wren='docker run --rm -it -u $(id -u):$(id -g) -v "$PWD":/tmp -w /tmp ajpa
 alias p2='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:2-alpine'
 # python3 Clean env
 alias p3='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:alpine'
+# python3 ptpython
+alias ptpy='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data ajpaulson/ptpy'
 
 # Simple ZSH builtin calculator
 calc() { echo $(( $* )) }
