@@ -29,6 +29,8 @@ alias day='date +"%a %x"'
 # Get web server headers and see if gzip/mod_deflate is supported
 alias header='curl -I'
 alias headerc='curl -I --compress'
+# Get SSL cert info
+alias sslconnect='openssl s_client -connect'
 # Hostname lookup on ip range
 alias nmsl='nmap -sL'
 # Full discovery scan
