@@ -64,6 +64,11 @@ alias p3='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD
 # python3 ptpython
 alias ptpy='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data ajpaulson/ptpy'
 
+# Docker refresh and cleanup images
+alias freshdock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=false | xargs -L1 docker pull'
+alias cleandock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=true | xargs -L1 docker rmi'
+
+
 # Simple ZSH builtin calculator
 calc() { echo $(( $* )) }
 # don't glob that!
