@@ -17,6 +17,13 @@ antigen bundle mafredri/zsh-async
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle marzocchi/zsh-notify
 
+# Make history-substring-search work cos it's all broken.
+zmodload zsh/terminfo
+# bindkey "$terminfo[kcuu1]" history-substring-search-up
+# bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 # Theme
 antigen theme ~/src/dotfiles --loc=alex --no-local-clone
 
