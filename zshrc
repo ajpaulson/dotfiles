@@ -15,7 +15,7 @@ antigen bundle extract
 antigen bundle safe-paste
 antigen bundle mafredri/zsh-async
 antigen bundle unixorn/autoupdate-antigen.zshplugin
-antigen bundle marzocchi/zsh-notify
+antigen bundle bgnotify
 
 # Make history-substring-search work cos it's all broken.
 zmodload zsh/terminfo
