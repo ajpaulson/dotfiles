@@ -66,7 +66,8 @@ alias ptpy='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$P
 
 # Docker refresh and cleanup images
 alias freshdock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=false | xargs -L1 docker pull'
-alias cleandock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=true | xargs -L1 docker rmi'
+alias cleandock='docker images --format "{{.ID}}" -f dangling=true | xargs -L1 docker rmi'
+alias killdock='docker ps -a --format "{{.Names}}" | xargs -L1 docker rm'
 
 
 # Simple ZSH builtin calculator
