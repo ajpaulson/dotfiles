@@ -12,7 +12,6 @@ antigen bundle history-substring-search
 antigen bundle zsh-users/zsh-completions src
 antigen bundle command-not-found
 antigen bundle extract
-antigen bundle safe-paste
 antigen bundle mafredri/zsh-async
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle bgnotify
@@ -39,4 +38,14 @@ export PATH=$PATH:$GOPATH/bin
 pd() {
   local projDir=$(pro search $1)
   cd ${projDir}
+}
+man() {
+	env \
+		LESS_TERMCAP_md=$'\e[1;36m' \
+		LESS_TERMCAP_me=$'\e[0m' \
+		LESS_TERMCAP_se=$'\e[0m' \
+		LESS_TERMCAP_so=$'\e[1;40;92m' \
+		LESS_TERMCAP_ue=$'\e[0m' \
+		LESS_TERMCAP_us=$'\e[1;32m' \
+			man "$@"
 }
