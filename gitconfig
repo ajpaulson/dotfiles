@@ -9,11 +9,11 @@
 	branch = auto
 	diff = auto
 [diff]
-	tool = vimdiff3
+	tool = nvim -d
 [merge]
 	tool = fugitive
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+	cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
 [mergetool]
 	prompt = false
 [core]
