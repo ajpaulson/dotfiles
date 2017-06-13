@@ -2,6 +2,11 @@
 autoload -U zmv
 
 # Aliases
+alias au='sudo apt update'
+alias ag='sudo apt upgrade'
+alias al='apt list --upgradeable'
+alias asc='apt search'
+alias asw='apt show'
 alias v='vim'
 alias n='nvim'
 alias sudo='sudo -E'
