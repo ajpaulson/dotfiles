@@ -4,7 +4,11 @@ autoload -U zmv
 # Aliases
 alias au='sudo apt update'
 alias ag='sudo apt upgrade'
+alias ap='sudo apt purge'
 alias al='apt list --upgradeable'
+alias ai='sudo apt install'
+alias aac='sudo apt autoclean'
+alias aar='sudo apt autoremove'
 alias asc='apt search'
 alias asw='apt show'
 alias v='vim'

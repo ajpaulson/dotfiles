@@ -7,7 +7,6 @@ antigen use oh-my-zsh
 # Bundles from the default repo (oh-my-zsh)
 antigen bundle git
 antigen bundle git-extras
-antigen bundle debian
 antigen bundle history-substring-search
 antigen bundle zsh-users/zsh-completions src
 antigen bundle command-not-found
