@@ -71,8 +71,12 @@ alias p2='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD
 alias p3='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:alpine'
 # python3 ptpython
 alias ptpy='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data ajpaulson/ptpy'
+# golang
+alias golang='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data golang:alpine'
 # gimme a debian docker container:
-alias debdock='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME=$HOME" -v "$PWD:/data" debian:stable bash'
+alias debdock='docker run --rm -it -w /data -v "$HOME/.ssh:/root/.ssh" -v "$HOME=$HOME" -v "$PWD:/data" debian:stable bash'
+# replace terraform
+alias terraform='docker run --rm -it -w /data -v "$HOME/.ssh:/root/.ssh" -v "$HOME/.aws:/root/.aws" -v "$PWD:/data" hashicorp/terraform'
 # Docker refresh and cleanup images
 alias freshdock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=false | xargs -L1 docker pull'
 alias cleandock='docker images --format "{{.ID}}" -f dangling=true | xargs -L1 docker rmi'
