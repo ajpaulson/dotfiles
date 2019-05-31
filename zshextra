@@ -71,12 +71,13 @@ alias p2='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD
 alias p3='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data python:alpine'
 # python3 ptpython
 alias ptpy='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data ajpaulson/ptpy'
+alias ptpy-ff='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data ajpaulson/ptpy:full-fat'
 # golang
 alias golang='docker run --rm -it -w /data -e "HOME=$HOME" -v "$HOME:$HOME" -v "$PWD":/data golang:alpine'
 # gimme a debian docker container:
 alias debdock='docker run --rm -it -w /data -v "$HOME/.ssh:/root/.ssh" -v "$HOME=$HOME" -v "$PWD:/data" debian:stable bash'
 # replace terraform
-alias terraform='docker run --rm -it -w /data -v "$HOME/.ssh:/root/.ssh" -v "$HOME/.aws:/root/.aws" -v "$PWD:/data" hashicorp/terraform'
+# alias terraform='docker run --rm -it -w /data -v "$HOME/.ssh:/root/.ssh" -v "$HOME/.aws:/root/.aws" -v "$PWD:/data" hashicorp/terraform'
 # Docker refresh and cleanup images
 alias freshdock='docker images --format "{{.Repository}}:{{.Tag}}" -f dangling=false | xargs -L1 docker pull'
 alias cleandock='docker images --format "{{.ID}}" -f dangling=true | xargs -L1 docker rmi'
@@ -94,4 +95,11 @@ dednes () {
 	awk '{ split("0,2,4,5,7,9,11,12",a,","); for (i = 0; i < 1; i+= 0.0001) \
 	printf("%08X\n", 100*sin(1382*exp((a[$1 % 8]/12)*log(2))*i)) }' | \
 	xxd -r -p | aplay -c 2 -f S32_LE -r 16000;
+}
+
+macnes () {
+	cat /dev/urandom | hexdump -v -e '/1 "%u\n"' | \
+	awk '{ split("0,2,4,5,7,9,11,12",a,","); for (i = 0; i < 1; i+= 0.0001) \
+	printf("%08X\n", 100*sin(1382*exp((a[$1 % 8]/12)*log(2))*i)) }' | \
+	xxd -r -p | sox -traw -c 2 -v 0.25 -r8000 -b32 -e signed-integer - -tcoreaudio;
 }
